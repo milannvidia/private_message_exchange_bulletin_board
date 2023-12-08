@@ -1,5 +1,6 @@
 # GSProject
-First run ServerMain
-then run Client main
+First run ServerMain.
 
-this will start the server, and two instances of a client who can communicate
+Then run Client main.
+
+this will start the server, and two instances of a client who can communicate.

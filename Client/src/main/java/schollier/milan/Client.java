@@ -21,8 +21,8 @@ public class Client
     ConnectIF connect;
     GUI gui;
 
-    public boolean write(int idx,String message,String tag){
-        return connect.write(idx,message,tag);
+    public void write(int idx,String message,String tag){
+        connect.write(idx,message,tag);
     }
     public String get(int idx, int tag){
         return connect.get(idx,tag);
@@ -85,7 +85,7 @@ public class Client
         a.gui.update();
         b.gui.update();
     }
-    public static void main( ) throws Exception {
+    public static void main(String[] args) throws Exception {
         Client A=new Client("Jan");
         Client B=new Client("Piet");
         bump(A,B);

@@ -54,9 +54,9 @@ public class Contact {
         byte [] hash= md1.digest(new byte[]{Integer.valueOf(sendTag).byteValue()});
         String hashBase64=getStringBase64(hash);
 
-        if(!app.write(sendIdx,getStringBase64(encrypted),hashBase64)){
-            return;
-        }
+        app.write(sendIdx,getStringBase64(encrypted),hashBase64);
+
+
         history.add("You: "+message);
         app.gui.addMessage(this);
 

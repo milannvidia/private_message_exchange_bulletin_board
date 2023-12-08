@@ -20,10 +20,9 @@ public class ConnectImpl extends UnicastRemoteObject implements ConnectIF {
 
 
     @Override
-    public boolean write(int idx, String message, String tag) {
+    public void write(int idx, String message, String tag) {
         bulletinBoard.get(idx).put(tag,message);
         gui.loadList();
-        return true;
     }
 
     @Override

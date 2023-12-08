@@ -19,7 +19,7 @@ public class Server
         }
         System.out.println("server running");
     }
-    public static void main()
+    public static void main(String[] args)
     {
         Server main=new Server();
         main.startServer();
