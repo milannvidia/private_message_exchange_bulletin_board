@@ -4,7 +4,11 @@ This repository contains a Java implementation based on the paper "**Privately (
 
 ## To run the project
 
+All dependecies can be found in the corresponding pom.xml files.
+
 First run ServerMain.
 Then run Client main.
 
 this will start the server, and two instances of a client who can communicate.
+
+Any questions? feel free to ask.
